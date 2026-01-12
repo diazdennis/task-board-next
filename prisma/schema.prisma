@@ -1,0 +1,67 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Board {
+  id          String   @id @default(cuid())
+  name        String   @db.VarChar(255)
+  description String?  @db.Text
+  color       String?  @db.VarChar(7) // Hex color code
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+  
+  tasks       Task[]
+  
+  @@index([createdAt]) // Index for sorting by creation date
+  @@index([updatedAt]) // Index for sorting by last update
+  @@map("boards")
+}
+
+model Task {
+  id          String   @id @default(cuid())
+  boardId     String   @map("board_id")
+  title       String   @db.VarChar(255)
+  description String?  @db.Text
+  status      TaskStatus @default(TODO)
+  priority    TaskPriority? @default(MEDIUM)
+  assignedTo  String?  @map("assigned_to") @db.VarChar(255) // Future: foreign key to User
+  dueDate     DateTime? @map("due_date") @db.Date
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+  
+  board       Board    @relation(fields: [boardId], references: [id], onDelete: Cascade)
+  
+  @@index([boardId]) // Critical for querying tasks by board
+  @@index([status]) // Critical for filtering by status
+  @@index([boardId, status]) // Composite index for common query pattern
+  @@index([dueDate]) // For sorting by due date
+  @@index([priority]) // For sorting by priority
+  @@index([createdAt]) // For sorting by creation date
+  @@map("tasks")
+}
+
+enum TaskStatus {
+  TODO
+  IN_PROGRESS
+  DONE
+  
+  @@map("task_status")
+}
+
+enum TaskPriority {
+  LOW
+  MEDIUM
+  HIGH
+  
+  @@map("task_priority")
+}
+
+

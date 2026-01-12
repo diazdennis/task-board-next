@@ -1,0 +1,20 @@
+{
+  "validation": {
+    "required": "{{field}} is required",
+    "minLength": "{{field}} must be at least {{min}} characters",
+    "maxLength": "{{field}} must be less than {{max}} characters",
+    "invalidFormat": "{{field}} format is invalid",
+    "invalidDate": "{{field}} must be a valid date",
+    "boardNameRequired": "Board name is required (1-255 characters)",
+    "descriptionMaxLength": "Description must be less than {{max}} characters",
+    "colorInvalid": "Color must be a valid hex code (e.g., #FF5733)",
+    "taskTitleRequired": "Task title is required (1-255 characters)"
+  },
+  "fields": {
+    "boardName": "Board name",
+    "taskTitle": "Task title",
+    "description": "Description"
+  }
+}
+
+

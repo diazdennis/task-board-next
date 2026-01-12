@@ -1,0 +1,14 @@
+{
+  "network": "Failed to connect. Please check your internet connection.",
+  "notFound": "{{resource}} not found",
+  "serverError": "Something went wrong. Please try again.",
+  "validationFailed": "Validation failed",
+  "boardNotFound": "Board not found",
+  "taskNotFound": "Task not found",
+  "deleteFailed": "Failed to delete {{resource}}",
+  "createFailed": "Failed to create {{resource}}",
+  "updateFailed": "Failed to update {{resource}}",
+  "loadFailed": "Failed to load {{resource}}"
+}
+
+

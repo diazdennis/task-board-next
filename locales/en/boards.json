@@ -1,0 +1,19 @@
+{
+  "title": "Task Boards",
+  "empty": "No boards yet. Create your first board!",
+  "create": {
+    "title": "Create New Board",
+    "success": "Board created successfully"
+  },
+  "delete": {
+    "title": "Delete Board",
+    "confirm": "Are you sure you want to delete \"{{name}}\"?",
+    "warning": "⚠️ Warning: This action cannot be undone!",
+    "message": "All {{count}} task{{plural}} in this board will be permanently deleted.",
+    "description": "This will permanently delete the board and all its tasks. This action cannot be undone.",
+    "success": "Board and all tasks deleted successfully"
+  },
+  "notFound": "Board not found"
+}
+
+

@@ -1,0 +1,41 @@
+{
+  "buttons": {
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "save": "Save",
+    "confirm": "Confirm",
+    "close": "Close",
+    "back": "Back",
+    "createBoard": "Create Board",
+    "createTask": "Create Task",
+    "saveChanges": "Save Changes",
+    "deleteBoard": "Delete Board",
+    "deleteTask": "Delete Task",
+    "all": "All",
+    "filter": "Filter",
+    "sort": "Sort"
+  },
+  "labels": {
+    "name": "Name",
+    "title": "Title",
+    "description": "Description",
+    "status": "Status",
+    "priority": "Priority",
+    "dueDate": "Due Date",
+    "assignedTo": "Assigned To",
+    "boardName": "Board Name",
+    "taskTitle": "Task Title",
+    "color": "Color"
+  },
+  "placeholders": {
+    "enterBoardName": "Enter board name",
+    "enterBoardDescription": "Enter board description (optional)",
+    "enterTaskTitle": "Enter task title",
+    "enterTaskDescription": "Enter task description (optional)",
+    "colorHex": "#FF5733 (optional)"
+  }
+}
+
+

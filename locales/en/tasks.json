@@ -1,0 +1,42 @@
+{
+  "title": "Tasks",
+  "empty": "No tasks yet. Create your first task!",
+  "status": {
+    "todo": "Todo",
+    "inProgress": "In Progress",
+    "done": "Done"
+  },
+  "priority": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High"
+  },
+  "create": {
+    "title": "Create New Task",
+    "success": "Task created successfully"
+  },
+  "edit": {
+    "title": "Edit Task"
+  },
+  "delete": {
+    "title": "Delete Task",
+    "confirm": "Are you sure you want to delete this task",
+    "success": "Task deleted successfully"
+  },
+  "update": {
+    "success": "Task updated successfully",
+    "statusUpdated": "Task status updated"
+  },
+  "noTasks": "No tasks",
+  "sort": {
+    "label": "Sort by",
+    "titleAZ": "Title (A-Z)",
+    "titleZA": "Title (Z-A)"
+  },
+  "filter": {
+    "label": "Filter by status",
+    "all": "All Tasks"
+  }
+}
+
+
